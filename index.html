@@ -4,11 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natalie De Rosas | Social Impact Director & Civic Strategist</title>
-    <meta name="description" content="Directora de impacto social con más de 12 años de experiencia en liderazgo de ONGs y empoderamiento ciudadano. Fundadora de Juventudes A.C.">
-    
-    <meta property="og:title" content="Natalie De Rosas | Liderazgo en Impacto Social">
-    <meta property="og:description" content="Estratega con trayectoria en UNICEF, Ashoka y ONU-Habitat. Empoderando a más de 235,000 ciudadanos.">
-    <meta property="og:type" content="website">
+    <meta name="description" content="Directora de impacto social con 12 años de experiencia en liderazgo de ONGs y empoderamiento ciudadano.">
     
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700;800&family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
@@ -25,31 +21,38 @@
         nav ul { display: flex; list-style: none; padding: 0; margin: 0; }
         nav a { font-family: 'Oswald'; font-weight: 700; margin-left: 25px; text-decoration: none; color: #000; font-size: 1rem; }
 
-        /* HERO */
-        .hero { display: grid; grid-template-columns: 1fr 1fr; height: 60vh !important; min-height: 450px; align-items: center; background: #fff; }
-        .hero-content { padding: 0 10%; }
+        /* 1. HERO (Driving Social) */
+        .hero { display: grid; grid-template-columns: 1fr 1fr; height: 60vh !important; min-height: 450px; align-items: center; background: #fff; padding: 0 5%; }
+        .hero-content { padding: 0 5%; }
         .hero-content h1 { font-size: clamp(2rem, 4vw, 3.5rem); line-height: 0.95; font-weight: 800; margin-bottom: 15px; }
         .hero-content h1 span { color: var(--accent-pink); }
         .hero-intro { font-size: 1rem; border-left: 5px solid var(--accent-pink); padding-left: 20px; }
         .hero-image-container { background:#eee; height:100%; display:flex; align-items:center; justify-content:center; overflow: hidden; }
-        .hero-image-container img { max-height: 45vh; width: auto; height: auto; object-fit: contain; }
+        .hero-image-container img { max-height: 45vh; width: auto; object-fit: contain; }
 
-        /* STATS */
+        /* 2. NUMERALIA (Stats) */
         .stats { background: #000 !important; color: #fff; display: flex; justify-content: space-around; padding: 40px 5%; flex-wrap: wrap; }
         .stat-item { text-align: center; padding: 10px; }
         .stat-item h2 { font-size: 3.5rem !important; color: var(--accent-pink) !important; font-weight: 800; margin: 0; }
         .stat-item p { color: #fff !important; font-weight: 700; font-size: 1rem; margin: 0; }
 
-        /* GRID */
+        /* SECCIONES GENERALES */
         section { padding: 60px 5%; }
         h2 { font-weight: 800 !important; font-size: 3rem !important; color: #000 !important; text-align: center; margin-bottom: 40px; }
         h2 span { color: var(--accent-pink) !important; }
         .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .card { background: #fff; padding: 35px; border: 2px solid #eee; transition: 0.3s; }
         .card:hover { border-color: #000; box-shadow: 8px 8px 0px var(--accent-pink); }
-        
+
+        /* 5. CARRUSEL DE IMÁGENES */
+        .carousel-container { width: 100%; overflow: hidden; background: #fff; padding: 40px 0; }
+        .carousel-track { display: flex; width: calc(250px * 10); animation: scroll 20s linear infinite; }
+        .carousel-track img { width: 250px; height: 350px; object-fit: cover; margin: 0 10px; border: 2px solid #000; }
+        @keyframes scroll { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-250px * 5)); } }
+
+        /* BOTONES Y OTROS */
         .btn { display: inline-block; padding: 15px 40px; background: var(--accent-pink); color: #fff; box-shadow: 6px 6px 0px #000; text-decoration: none; font-weight: 800; border:none; cursor:pointer; }
-        .social-btn { text-decoration:none; color:#000; font-weight:800; border:2px solid #000; padding:10px 25px; font-family:'Oswald'; display:inline-block; transition: 0.3s; }
+        .social-btn { text-decoration:none; color:#000; font-weight:800; border:2px solid #000; padding:10px 25px; font-family:'Oswald'; transition: 0.3s; }
         .social-btn:hover { background: var(--accent-pink); color: #fff; border-color: var(--accent-pink); }
 
         @media (max-width: 900px) { .hero { grid-template-columns: 1fr; height: auto !important; } .hero-image-container { display: none; } }
@@ -60,8 +63,8 @@
     <nav>
         <div class="logo">NATALIE <span>DE ROSAS</span></div>
         <ul>
-            <li><a href="#impacto">Impacto</a></li>
-            <li><a href="#videos">Contenido</a></li>
+            <li><a href="#expertise">Expertise</a></li>
+            <li><a href="#metodologia">Metodología</a></li>
             <li><a href="#contacto">Contacto</a></li>
         </ul>
     </nav>
@@ -70,77 +73,40 @@
         <div class="hero-content">
             <h1>Driving Social <br><span>Impact & Leadership</span></h1>
             <div class="hero-intro">
-                <p>Estratega con más de 12 años orquestando programas de compromiso cívico y desarrollo comunitario a gran escala.</p>
+                <p>Estratega con 12 años de experiencia orquestando programas de compromiso cívico y desarrollo comunitario a gran escala.</p>
             </div>
-            <a href="#contacto" class="btn" style="margin-top:20px;">VER TRAYECTORIA</a>
+            <a href="#contacto" class="btn" style="margin-top:20px;">VER PROYECTOS</a>
         </div>
         <div class="hero-image-container">
-            <img src="https://via.placeholder.com/600x800" alt="Natalie De Rosas">
+            <img src="https://via.placeholder.com/600x800" alt="Natalie De Rosas Profile">
         </div>
     </section>
 
     <section class="stats">
         <div class="stat-item"><h2>+235K</h2><p>Ciudadanos Empoderados</p></div>
-        <div class="stat-item"><h2>+25K</h2><p>Jóvenes Activados</p></div>
-        <div class="stat-item"><h2>12+</h2><p>Años de Experiencia</p></div>
+        <div class="stat-item"><h2>+25K</h2><p>Jóvenes Votantes Activados</p></div>
+        <div class="stat-item"><h2>12+</h2><p>Años de Trayectoria</p></div>
     </section>
 
-    <section id="impacto">
-        <h2>MI <span>EXPERIENCIA</span></h2>
+    <section id="expertise">
+        <h2>ÁREAS DE <span>EXPERTISE</span></h2>
         <div class="grid-3">
-            <div class="card"><h3>Liderazgo en Juventudes A.C.</h3><p>Fundadora y Directora Ejecutiva impactando en políticas de participación juvenil nacional.</p></div>
-            <div class="card"><h3>Innovación Social</h3><p>Coordinación de iniciativas de regeneración comunitaria en áreas vulnerables para el INJUVE.</p></div>
-            <div class="card"><h3>Alianzas Globales</h3><p>Colaboración estratégica con organismos como UNICEF, ONU-Habitat y Ashoka.</p></div>
+            <div class="card"><h3>Liderazgo en ONGs</h3><p>Fundadora de Juventudes A.C., enfocada en empoderamiento cívico y políticas públicas juveniles.</p></div>
+            <div class="card"><h3>Gestión de Proyectos</h3><p>Certificación Google Project Management para la ejecución de programas sociales nacionales.</p></div>
+            <div class="card"><h3>Alianzas Estratégicas</h3><p>Movilización de recursos entre Gobierno, ONGs y Sector Privado para impacto escalable.</p></div>
         </div>
     </section>
 
-    <section id="videos">
-        <h2 style="text-align:center;">CONTENIDO EN <span>REDES</span></h2>
-        <div class="grid-3" style="max-width: 1200px; margin: 0 auto; gap: 20px; padding: 0 20px;">
-            <div style="text-align:center;">
-                <p style="font-weight:bold; font-family:'Oswald';">INSTAGRAM</p>
-                <iframe src="https://www.instagram.com/p/C6ITJGwNa9i/embed" loading="lazy" frameborder="0" style="width:100%; height:450px; border:2px solid #000; border-radius:12px;"></iframe>
-            </div>
-            <div style="text-align:center;">
-                <p style="font-weight:bold; font-family:'Oswald';">YOUTUBE</p>
-                <iframe src="https://www.youtube.com/embed/JLlIeY8H3OE" loading="lazy" frameborder="0" allowfullscreen style="width:100%; height:450px; border:2px solid #000; border-radius:12px;"></iframe>
-            </div>
-            <div style="text-align:center;">
-                <p style="font-weight:bold; font-family:'Oswald';">TIKTOK</p>
-                <iframe src="https://www.tiktok.com/embed/v2/7359053367219440902" loading="lazy" frameborder="0" style="width:100%; height:450px; border:2px solid #000; border-radius:12px;"></iframe>
-            </div>
+    <section style="background: var(--bg-light);">
+        <h3 style="text-align:center; margin-bottom:20px; font-family:'Oswald';">HE COLABORADO CON</h3>
+        <div style="font-family:'Oswald'; text-align:center; opacity:0.8; font-size:1.1rem; line-height:2;">
+            UNICEF • ASHOKA • ONU HABITAT • JUVENTUDES A.C. • INJUVE • TRIBUNAL ELECTORAL • FUNDACIÓN TELMEX • BÉCALAS • MY WORLD
         </div>
     </section>
 
-    <section style="text-align:center; padding: 60px 0;">
-        <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
-            <a href="https://www.tiktok.com/@nataliederosas" target="_blank" class="social-btn">TikTok</a>
-            <a href="https://www.instagram.com/natalie_de_rosas/" target="_blank" class="social-btn">Instagram</a>
-            <a href="https://www.youtube.com/@NatalieDeRosas" target="_blank" class="social-btn">Youtube</a>
-            <a href="https://linkedin.com/in/nataliederosas" target="_blank" class="social-btn">LinkedIn</a>
-        </div>
-    </section>
-
-    <section style="background:#000; color:#fff; text-align:center; padding: 80px 5%;">
-        <h3 style="font-size:3.5rem; color:var(--accent-pink); margin-bottom:10px;">"Be the inspiration that leads change"</h3>
-        <p style="font-style:italic; color: #ccc;">— Natalie De Rosas, Social Impact Leader.</p>
-    </section>
-
-    <section id="contacto">
-        <div style="max-width:600px; margin:0 auto; border:5px solid #000; padding:40px; text-align:center;">
-            <h2>LISTO PARA EL <span>CAMBIO?</span></h2>
-            <form style="text-align:left; margin-top:30px;">
-                <input type="text" placeholder="Nombre" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd;">
-                <input type="email" placeholder="Email" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd;">
-                <textarea placeholder="Mensaje" style="width:100%; padding:15px; margin-bottom:20px; border:2px solid #ddd; height:100px;"></textarea>
-                <button type="button" class="btn" style="width:100%;">ENVIAR</button>
-            </form>
-        </div>
-    </section>
-
-    <footer style="background:#000; color:#fff; padding:40px; text-align:center;">
-        &copy; 2026 Natalie De Rosas | Social Impact Strategist
-    </footer>
-
-</body>
-</html>
+    <section class="carousel-container">
+        <h2 style="margin-bottom:20px;">GALERÍA DE <span>IMPACTO</span></h2>
+        <div class="carousel-track">
+            <img src="https://via.placeholder.com/250x350" alt="Evento 1">
+            <img src="https://via.placeholder.com/250x350" alt="Evento 2">
+            <img src="
